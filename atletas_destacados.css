@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #202833;
+    min-height: 100vh;
+}
+/*-------------------------------*/
+/*--|estilo_atletas_destacados|--*/
+/*-------------------------------*/
+.encabezado {
+    background: #17212b;
+    color: white;
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.icono_encabezado {
+    width: 70px;
+    height: 70px;
+    background: #e0a72e;
+    color: #17212b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.etiqueta {
+    color: #e0a72e;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+}
+.encabezado h1 {
+    font-size: 30px;
+    margin-bottom: 6px;
+}
+.encabezado div:last-child > p:last-child {
+    color: #bdc7cf;
+    font-size: 14px;
+}
+/*-------------------------------*/
+/*--|estilo_atletas_destacados|--*/
+/*-------------------------------*/
+.contenedor {
+    width: 90%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+.introduccion {
+    background: white;
+    border-radius: 12px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+    border-left: 5px solid #e0a72e;
+    box-shadow: 0 5px 15px #0000000d;
+}
+.introduccion > i {
+    font-size: 28px;
+    color: #e0a72e;
+}
+.introduccion h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.introduccion p {
+    color: #737e88;
+    font-size: 14px;
+}
+/*-------------------------------*/
+/*--|estilo_bloque_de_tarjetas|--*/
+/*-------------------------------*/
+.atletas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.atleta {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    position: relative;
+    border-top: 4px solid #e0a72e;
+    box-shadow: 0 6px 18px #0000000d;
+}
+.numero_atleta {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    color: #a8b0b7;
+    font-size: 13px;
+    font-weight: bold;
+}
+.icono_deporte {
+    width: 70px;
+    height: 70px;
+    background: #eef1f4;
+    color: #34495e;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.datos_atleta {
+    display: flex;
+    flex-direction: column;
+}
+.datos_atleta label {
+    color: #5d6872;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.datos_atleta input, .datos_atleta textarea {
+    width: 100%;
+    border: 1px solid #dce1e5;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 14px;
+    outline: none;
+}
+.datos_atleta input:focus, .datos_atleta textarea:focus {
+    border-color: #e0a72e;
+}
+.datos_atleta textarea {
+    height: 75px;
+    resize: vertical;
+}
+.boton_guardar, .boton_restaurar {
+    border: none;
+    padding: 10px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 3px;
+}
+.boton_guardar {
+    background: #17212b;
+    color: white;
+}
+.boton_guardar:hover {
+    background: #263746;
+}
+.boton_restaurar {
+    background: #edf0f2;
+    color: #46535d;
+    margin-left: 5px;
+}
+.boton_restaurar:hover {
+    background: #dfe4e7;
+}
+.boton_guardar i, .boton_restaurar i {
+    margin-right: 5px;
+}
+.mensaje_atleta {
+    min-height: 18px;
+    color: #31805b;
+    font-size: 12px;
+    margin-top: 10px;
+}
+/*-----------------------------------------*/
+/*--|estilo_accion_de_restablecer_atleta|--*/
+/*-----------------------------------------*/
+.acciones {
+    text-align: center;
+    margin-top: 28px;
+}
+#boton_restablecer {
+    background: #d94c48;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#boton_restablecer:hover {
+    background: #bd3e3a;
+}
+#boton_restablecer i {
+    margin-right: 6px;
+}
+#mensaje_general {
+    margin-top: 12px;
+    color: #66737d;
+    font-size: 14px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atletas destacados</title>
+    <link rel="stylesheet" href="atletas_destacados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="atletas_destacados.js" defer></script>
+</head>
+<body>
+    <!--------------------------------------->
+    <!--|estructuracion_atletas_destacados|-->
+    <!--------------------------------------->
+    <header class="encabezado">
+        <div class="icono_encabezado">
+            <i class="fa-solid fa-medal"></i>
+        </div>
+        <div>
+            <p class="etiqueta">MUNDO DEL DEPORTE</p>
+            <h1>Atletas Destacados</h1>
+            <p>Conoce algunos perfiles deportivos.</p>
+        </div>
+    </header>
+    <!------------------------------------->
+    <!--|contenido_de_atletas_destacados|-->
+    <!------------------------------------->
+    <main class="contenedor">
+        <section class="introduccion">
+            <i class="fa-solid fa-trophy"></i>
+            <div>
+                <h2>Perfiles deportivos</h2>
+                <p>Modifica la información de cada atleta y guarda tus cambios.</p>
+            </div>
+        </section>
+        <!------------------------>
+        <!--|bloque_de_tarjetas|-->
+        <!------------------------>
+        <section class="atletas">
+            <article class="atleta" data-id="1">
+                <div class="numero_atleta">01</div>
+                <div class="icono_deporte">
+                    <i class="fa-solid fa-person-running"></i>
+                </div>
+                <div class="datos_atleta">
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Deporte</label>
+                    <input type="text" class="campo_deporte">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                </div>
+                <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                <p class="mensaje_atleta"></p>
+            </article>
+            <article class="atleta" data-id="2">
+                <div class="numero_atleta">02</div>
+                <div class="icono_deporte">
+                    <i class="fa-solid fa-person-swimming"></i>
+                </div>
+                <div class="datos_atleta">
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Deporte</label>
+                    <input type="text" class="campo_deporte">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                </div>
+                <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                <p class="mensaje_atleta"></p>
+            </article>
+            <article class="atleta" data-id="3">
+                <div class="numero_atleta">03</div>
+                <div class="icono_deporte">
+                    <i class="fa-solid fa-futbol"></i>
+                </div>
+                <div class="datos_atleta">
+                    <label>Nombre</label>
+                    <input type="text" class="campo_nombre">
+                    <label>Deporte</label>
+                    <input type="text" class="campo_deporte">
+                    <label>Descripción</label>
+                    <textarea class="campo_descripcion"></textarea>
+                </div>
+                <button class="boton_guardar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                <button class="boton_restaurar"><i class="fa-solid fa-rotate-left"></i>Restaurar</button>
+                <p class="mensaje_atleta"></p>
+            </article>
+        </section>
+        <!---------------------------------->
+        <!--|accion_de_restablecer_atleta|-->
+        <!---------------------------------->
+        <section class="acciones">
+            <button id="boton_restablecer"><i class="fa-solid fa-trash"></i>Restablecer todos los atletas</button>
+            <p id="mensaje_general"></p>
+        </section>
+    </main>
+</body>
+</html>
